@@ -12,13 +12,16 @@
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
+					<Add option="-std=c++11" />
+					<Add option="-Wextra" />
+					<Add option="-Wall" />
 					<Add option="-g" />
 				</Compiler>
 				<Linker>
 					<Add library="sfml-network-s-d" />
 					<Add library="sfml-audio-s-d" />
-					<Add library="sfml-window-s-d" />
 					<Add library="sfml-graphics-s-d" />
+					<Add library="sfml-window-s-d" />
 					<Add library="sfml-system-s-d" />
 				</Linker>
 			</Target>
@@ -34,8 +37,8 @@
 					<Add option="-s" />
 					<Add library="sfml-network-s" />
 					<Add library="sfml-audio-s" />
-					<Add library="sfml-window-s" />
 					<Add library="sfml-graphics-s" />
+					<Add library="sfml-window-s" />
 					<Add library="sfml-system-s" />
 				</Linker>
 			</Target>
